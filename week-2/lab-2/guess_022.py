@@ -5,18 +5,16 @@ import sys
 lines = sys.stdin.read().strip().split("\n")
 correctNumber = int(lines[-2])
 
-guessLines = lines[:-2]
-guesses = []
-for i in range(len(guessLines) // 2):
-    guesses.append((int(guessLines[i * 2]), guessLines[i * 2 + 1]))
+guessNumbers = [int(v) for v in lines[:-2] if v.isdigit()]
+higherOrLower = [v for v in lines[:-2] if not v.isdigit()]
 
 isConsistent = True
-for guess in guesses:
-    if guess[0] < correctNumber and guess[1] != "higher":
+for i, guess in enumerate(guessNumbers):
+    if guess < correctNumber and higherOrLower[i] != "higher":
         isConsistent = False
-    elif guess[0] > correctNumber and guess[1] != "lower":
+    elif guess > correctNumber and higherOrLower[i] != "lower":
         isConsistent = False
-    elif guess[0] == correctNumber:
+    elif guess == correctNumber:
         isConsistent = False
 
 print("Bert can be trusted" if isConsistent else "Bert is not to be trusted")
