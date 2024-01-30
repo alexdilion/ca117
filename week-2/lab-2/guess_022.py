@@ -16,7 +16,7 @@ for guess in guesses:
         isConsistent = False
     elif guess[0] > correctNumber and guess[1] != "lower":
         isConsistent = False
-    else:
+    elif guess[0] == correctNumber:
         isConsistent = False
 
 print("Bert can be trusted" if isConsistent else "Bert is not to be trusted")
