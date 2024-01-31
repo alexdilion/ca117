@@ -14,9 +14,9 @@ contains_2_plus_qs = [w for w in words if w.lower().count("q") >= 2]
 contains_cie = [w for w in words if "cie" in w.lower()]
 anagrams_of_angle = [w for w in words if isAnagram(w.lower(), "angle")]
 
-print(f"""Words containing 17 letters: {length_17}
-Words containing 18+ letters: {length_18_plus}
-Words with 4 a's: {contains_4_as}
-Words with 2+ q's: {contains_2_plus_qs}
-Words containing cie: {contains_cie}
-Anagrams of angle: {anagrams_of_angle}""")
+print(f"Words containing 17 letters: {length_17}")
+print(f"Words containing 18+ letters: {length_18_plus}")
+print(f"Words with 4 a's: {contains_4_as}")
+print(f"Words with 2+ q's: {contains_2_plus_qs}")
+print(f"Words containing cie: {contains_cie}")
+print(f"Anagrams of angle: {anagrams_of_angle}")
