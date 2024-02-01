@@ -19,5 +19,5 @@ def binsearch(query, sorted_list):
 
 words = sys.stdin.read().strip().split()
 words = [w for w in words if len(w) >= 5]
-palindromes = [w for w in words if binsearch(w[::-1].lower(), words) and len(w) >= 5]
+palindromes = [w for w in words if binsearch(w[::-1].lower(), words)]
 print(palindromes)
