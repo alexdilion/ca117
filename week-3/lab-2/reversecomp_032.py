@@ -8,9 +8,9 @@ def binsearch(query, sorted_list):
 
     while low <= high:
         mid = (low + high) // 2
-        if sorted_list[mid].lower() < query:
+        if sorted_list[mid].lower() < query.lower():
             low = mid + 1
-        elif sorted_list[mid].lower() > query:
+        elif sorted_list[mid].lower() > query.lower():
             high = mid - 1
         else:
             return True
@@ -19,5 +19,5 @@ def binsearch(query, sorted_list):
 
 words = sys.stdin.read().strip().split()
 words = [w for w in words if len(w) >= 5]
-palindromes = [w for w in words if binsearch(w[::-1].lower(), words)]
+palindromes = [w for w in words if binsearch(w[::-1], words)]
 print(palindromes)
