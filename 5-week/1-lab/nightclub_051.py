@@ -4,8 +4,7 @@ import sys
 
 maxCapacity = int(sys.stdin.readline())
 totalPeople = 0
-deniedEntry = 0
-
+entriesDenied = 0
 for group in sys.stdin:
     tokens = group.strip().split()
     isLeaving, size = tokens[0] == "leave", int(tokens[1])
@@ -15,6 +14,6 @@ for group in sys.stdin:
     elif totalPeople + size <= maxCapacity:
         totalPeople += size
     else:
-        deniedEntry += 1
+        entriesDenied += 1
 
-print(deniedEntry)
+print(entriesDenied)
