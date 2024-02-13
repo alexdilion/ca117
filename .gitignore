@@ -1,5 +1,5 @@
-*test*.txt
-*test
-tmp.*
 tin
 tout
+test*
+tmp*
+*.txt
