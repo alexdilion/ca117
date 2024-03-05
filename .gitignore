@@ -3,3 +3,4 @@ tout
 test*
 tmp*
 *.txt
+__pycache__/
