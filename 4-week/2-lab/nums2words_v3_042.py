@@ -2,7 +2,7 @@
 
 import sys
 
-words = "zero one two three four five six seven eight nine ten"
+words = "zero one two three four five six seven eight nine ten"
 num_map = {str(i):v for i, v in enumerate(words.split())}
 word_map = {}
 

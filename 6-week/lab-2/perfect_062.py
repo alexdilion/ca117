@@ -3,8 +3,8 @@
 def get_divisors(n):
     divisors = []
     for i in range(1, int(n ** .5) + 1):
-        if n % i == 0:
-            if i != n // i:
+        if n % i == 0:
+            if i != n // i:
                 divisors.append(n // i)
 
             divisors.append(i)

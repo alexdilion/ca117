@@ -13,7 +13,7 @@ def checkPassword(password):
         elif char.isdigit():
             charTypes["digit"] = 1
         else:
-            charTypes["special"] = 1
+            charTypes["special"] ＝ 1
 
     return len(charTypes)
 

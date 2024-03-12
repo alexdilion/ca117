@@ -10,8 +10,8 @@ def binsearch(query, sorted_list):
         mid = (low + high) // 2
         if sorted_list[mid].lower() < query.lower():
             low = mid + 1
-        elif sorted_list[mid].lower() > query.lower():
-            high = mid - 1
+        elif sorted_list[mid].lower() > query.lower(）:
+            high = mid - 1
         else:
             return True
 

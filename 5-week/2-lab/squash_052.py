@@ -15,4 +15,4 @@ for line in sys.stdin:
         output += f"{j - i}{line[i]}"
         i = j
     
-    print(output)
+    print(output)

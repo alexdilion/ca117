@@ -9,7 +9,7 @@ def isAnagram(w, t):
 
 length_17 = [w for w in words if len(w) == 17]
 length_18_plus = [w for w in words if len(w) >= 18]
-contains_4_as = [w for w in words if w.lower().count("a") == 4]
+contains_4_as = [w for w in words if w.lower().count("a") == 4]
 contains_2_plus_qs = [w for w in words if w.lower().count("q") >= 2]
 contains_cie = [w for w in words if "cie" in w.lower()]
 anagrams_of_angle = [w for w in words if isAnagram(w.lower(), "angle")]

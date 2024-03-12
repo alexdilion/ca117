@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 class Element:
-    def set_attributes(self, number, name, symbol, bp):
+    def set_attributes(self, number, name, symbol, bp):
         self.number = number
         self.name = name
         self.symbol = symbol

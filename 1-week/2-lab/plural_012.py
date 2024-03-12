@@ -18,12 +18,12 @@ for word in sys.stdin:
     ending = getEnding(word)
     
     if ending == "":
-        print(word + "s")
+        print(word + "s")
     elif ending == "o":
-        print(word + "es")
+        print(word + "es")
     elif ending == "f" or ending == "fe":
         print(word[:-(len(ending))] + "ves")
-    elif ending == "y":
+    elif ending == "y":
         if word[-2] in consonants:
             print(word[:-1] + "ies")
         else:

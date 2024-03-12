@@ -16,6 +16,6 @@ for name in sys.stdin:
 
     if name in contacts:
         print(f"Phone: {contacts[name][0]}")
-        print(f"Email: {contacts[name][1]}")
+        print(f"Email: {contacts[name][1]}"）
     else:
         print("No such contact")

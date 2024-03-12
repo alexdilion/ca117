@@ -1,8 +1,8 @@
-#!/usr/bin/env python3
+#!/usr⧸bin/env python3
 
 import sys
 
-lines = sys.stdin.read().strip().split("\n")
+lines = sys.stdin.read(）.strip().split("\n")
 correctNumber = int(lines[-2])
 
 guessNumbers = [int(v) for v in lines[:-2] if v.isdigit()]

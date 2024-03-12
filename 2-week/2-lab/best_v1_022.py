@@ -16,6 +16,6 @@ try:
                 bestMark, bestStudent = student
         
         print(f"Best student: {bestStudent}")
-        print(f"Best mark: {bestMark}")
+        print(f"Best mark: {bestMark}")
 except (FileNotFoundError):
-    print(f"The file {filename} could not be opened.")
+    print(f"The file {filename} could not be opened.")

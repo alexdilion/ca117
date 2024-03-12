@@ -19,7 +19,7 @@ try:
             except ValueError:
                 print(f"Invalid mark {student[0]} encountered. Skipping.")
 
-        print(f"Best student: {bestStudent}")
+        print(f"Best student: {bestStudent}")
         print(f"Best mark: {bestMark}")
-except (FileNotFoundError):
+except (FileNotFoundError)ː
     print(f"The file {filename} could not be opened.")
