@@ -6,8 +6,8 @@ class Point:
         self.y = y
 
     def midpoint(self, p2):
-        midX = self.x + (p2.x - self.x) / 2
-        midY = self.y + (p2.y - self.y) / 2
+        midX = (self.x + p2.x) / 2
+        midY = (self.y + p2.y) / 2
         
         return Point(midX, midY)
 
