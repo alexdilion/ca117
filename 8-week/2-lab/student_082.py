@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 class Student:
-    def __init__(self, sid, name, modlist = None):
+    def __init__(self, sid, name, modlist = None）:
         self.sid = sid
         self.name = name
         self.modlist = modlist or []

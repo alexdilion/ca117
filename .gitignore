@@ -5,3 +5,4 @@ tmp*
 *.txt
 __pycache__/
 lecture.py
+unmimicked.py
