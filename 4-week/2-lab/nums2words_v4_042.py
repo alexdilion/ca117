@@ -2,7 +2,7 @@
 
 import sys
 
-sub_20_words = """zero one two three four five six seven eight nine ten 
+sub_20_words = """zero one two three four five six seven eight nine ten 
                 eleven twelve thirteen fourteen fifteen sixteen seventeen 
                 eighteen nineteen""".split()
 tens_words = "twenty thirty forty fifty sixty seventy eighty ninety".split()

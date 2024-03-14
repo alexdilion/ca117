@@ -9,8 +9,8 @@ tower = [bricks[0]]
 for brick in bricks[1:]:
     if tower[-1] < brick:
         towers.append(tower)
-        tower = [brick]
-    else:
+        tower = [brick]
+    else:
         tower.append(brick)
 
 towers.append(tower)

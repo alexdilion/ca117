@@ -11,8 +11,8 @@ def sumDigits(num):
 
 n = int(sys.stdin.read())
 while True:
-    if not n % sumDigits(n):
-        break
+    if not n % sumDigits(n):
+        break
 
     n += 1
 

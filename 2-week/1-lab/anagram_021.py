@@ -10,7 +10,7 @@ for line in sys.stdin:
 # # Solution without sorted function
 # for line in sys.stdin:
 #     w1, w2 = line.split()
-#     charCounts = [{}, {}]
+#     charCounts = [{}, {}]
 
 #     for c in w1:
 #         if c not in charCounts[0]:

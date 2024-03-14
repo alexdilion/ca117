@@ -20,4 +20,4 @@ class Circle:
         self.radius = radius
     
     def __str__(self):
-        return f"Centre: {str(self.centre)}\nRadius: {self.radius}"
+        return f"Centre: {self.centre}\nRadius: {self.radius}"

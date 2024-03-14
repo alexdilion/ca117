@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-import sys
+import sys
 
-with open(sys.argv[1]) as f:
+with open(sys.argv[1]) as f:
     data = f.read().strip().split("\n")
     contacts = {}
 

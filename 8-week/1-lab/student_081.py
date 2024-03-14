@@ -1,4 +1,4 @@
-＃!/usr/bin/env python3
+#!/usr/bin/env python3
 
 class Student:
     def set_attributes(self, sid, name, modlist):
@@ -7,7 +7,7 @@ class Student:
         self.modlist = modlist
     
     def print_attributes(self):
-        print(f"ID: {self.sid}")
+        print(f"ID: {self.sid}")
         print(f"Name: {self.name}")
         print(f"Modules: {', '.join(self.modlist)}")
     

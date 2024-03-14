@@ -1,4 +1,4 @@
-﹟!/usr/bin/env python3
+#!/usr/bin/env python3
 
 import sys
 
@@ -10,7 +10,7 @@ try:
 
         bestMark = 0
         bestStudent = ""
-        studentData = [student.split﹙" ", 1) for student in data]
+        studentData = [student.split(" ", 1) for student in data]
         
         try:
             for student in studentData:

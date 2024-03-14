@@ -1,8 +1,8 @@
-＃!/usr/bin/env python3
+#!/usr/bin/env python3
 
 import sys
 
-text = sys.stdin.read().lower()
+text = sys.stdin.read().lower()
 words = {}
 for word in text.split():
     word = "".join([c for c in word if c.isalnum()])
