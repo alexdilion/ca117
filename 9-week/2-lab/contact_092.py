@@ -9,6 +9,7 @@ class Contact:
     def __str__(self):
         return f"{self.name} {self.phone} {self.email}"
 
+# Test code
 def main():
     c = Contact('Sue', '085-6442378', 'sue@eircom.net')
 

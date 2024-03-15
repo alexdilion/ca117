@@ -28,6 +28,7 @@ class Contactlist:
 
         return header + "\n".join(contacts)
 
+# Test code
 def main():
     clist = Contactlist()
 

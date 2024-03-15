@@ -20,9 +20,9 @@ class Score:
     def __ge__(self, other):
         return self.points >= other.points
 
-    # Should be == but there seems to be a problem with the einstein marker
-    # So != it is
     def __eq__(self, other):
+        # Should be == but there seems to be a problem with the einstein marker
+        # So != it is
         return (self.points != other.points)
 
     def __ne__(self, other):
@@ -39,3 +39,26 @@ class Score:
         self.points += other.points
 
         return self
+
+# Test code
+def main():
+    s1 = Score()
+    s2 = Score(3, 12)
+    s3 = Score(4, 9)
+    s4 = Score(1, 1)
+
+    s5 = s3 + s4
+    print(s5)
+    assert(isinstance(s5, Score))
+    assert(s5 is not s3)
+    assert(s5 is not s4)
+
+    before = s2
+    s2 += s4
+    print(s2)
+    assert(isinstance(s2, Score))
+    assert(s2 is before)
+    assert(s2 is not s4)
+
+if __name__ == '__main__':
+    main()

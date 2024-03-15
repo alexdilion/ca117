@@ -13,3 +13,19 @@ class Point:
 
     def __str__(self):
         return f"({self.x:.01f}, {self.y:.01f})"
+
+# Test code
+def main():
+    p1 = Point(2, 3)
+    p2 = Point(4, 6)
+
+    p3 = p1.midpoint(p2)
+
+    print(p1)
+    print(p2)
+    print(p3)
+
+    assert(isinstance(p3, Point))
+
+if __name__ == '__main__':
+    main()

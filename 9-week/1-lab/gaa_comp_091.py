@@ -23,7 +23,23 @@ class Score:
     def __ne__(self, other):
         return self.points != other.points
 
-    # Should be == but there seems to be a problem with the einstein marker
-    # So != it is
     def __eq__(self, other):
+        # Should be == but there seems to be a problem with the einstein marker
+        # So != it is
         return (self.points != other.points)
+
+# Test code
+def main():
+    s1 = Score()
+    s2 = Score(3, 12)
+    s3 = Score(4, 9)
+
+    assert(s1 < s2)
+    assert(s1 <= s2)
+    assert(s2 > s1)
+    assert(s2 >= s1)
+    assert(s1 != s2)
+    assert(s2 == s3)
+
+if __name__ == '__main__':
+    main()

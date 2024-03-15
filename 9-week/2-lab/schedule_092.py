@@ -28,6 +28,7 @@ class Schedule:
         
         return header + "\n".join(sortedMeetings) + meetingCount
 
+# Test code
 def main():
     schedule = Schedule()
 

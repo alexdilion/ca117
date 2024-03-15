@@ -7,7 +7,8 @@ class Student:
         self.marks = marks or []
 
     def getAverage(self):
-        return int((sum([m[1] for m in self.marks]) / len(self.marks)) + 0.5)
+        markSum = sum([m[1] for m in self.marks])
+        return round(markSum / len(self.marks) + 0.01)
 
     def __str__(self):
         output = f"Name: {self.name}\nID: {self.id}\n"
@@ -29,8 +30,8 @@ class Classlist:
 
         return "\n".join(output)
 
+# Test code
 def main():
-
     cl = Classlist()
 
     s1 = Student('Hortense', 22217654, [('CA116', 70), ('CA117', 60)])
@@ -40,7 +41,6 @@ def main():
     cl.add(s2)
 
     print(cl)
-
 
 if __name__ == '__main__':
     main()

@@ -6,12 +6,14 @@ class Student:
         self.id = studentId
         self.marks = marks or []
     
+    def getAverage(self):
+        markSum = sum([m[1] for m in self.marks])
+        return round(markSum / len(self.marks) + 0.01)
+
     def __str__(self):
         output = f"Name: {self.name}\nID: {self.id}\n"
         output += f"Modules: {', '.join(sorted([m[0] for m in self.marks]))}\n"
-
-        average = int((sum([m[1] for m in self.marks]) / len(self.marks)) + 0.5)
-        output += f"Average mark: {average}"
+        output += f"Average mark: {self.getAverage()}"
 
         return output
 

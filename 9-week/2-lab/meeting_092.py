@@ -10,6 +10,7 @@ class Meeting:
         time = f"{self.hour:0>2d}:{self.minute:0>2d}"
         return f"{time} ({self.duration} minutes)"
 
+# Test code
 def main():
     m = Meeting(9, 5, 30)
 
