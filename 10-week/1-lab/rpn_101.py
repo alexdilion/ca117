@@ -21,7 +21,6 @@ class Stack:
     def __len__(self):
         return len(self.l)
 
-
 binops = {'+': float.__add__,
           '-': float.__sub__,
           '*': float.__mul__,
