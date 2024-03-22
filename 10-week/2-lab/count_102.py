@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
-def count(s, char_count = 0):
+def count(s):
     if s == "":
-        return char_count
+        return 0
 
-    return count(s[:-1], char_count + 1)
+    return 1 + count(s[1:])
 
 # Test code
 def main():

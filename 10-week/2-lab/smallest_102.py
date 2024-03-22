@@ -4,10 +4,10 @@ def smallest(arr, smallest_n = None):
     if len(arr) == 0:
         return smallest_n
     
-    if not smallest_n or arr[-1] < smallest_n:
-        smallest_n = arr[-1]
+    if not smallest_n or arr[0] < smallest_n:
+        smallest_n = arr[0]
     
-    return smallest(arr[:-1], smallest_n)
+    return smallest(arr[1:], smallest_n)
 
 # Test code
 def main():

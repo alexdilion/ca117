@@ -4,10 +4,10 @@ def biggest(arr, biggest_n = None):
     if len(arr) == 0:
         return biggest_n
     
-    if not biggest_n or arr[-1] > biggest_n:
-        biggest_n = arr[-1]
+    if not biggest_n or arr[0] > biggest_n:
+        biggest_n = arr[0]
     
-    return biggest(arr[:-1], biggest_n)
+    return biggest(arr[1:], biggest_n)
 
 # Test code
 def main():
