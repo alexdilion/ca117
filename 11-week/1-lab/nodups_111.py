@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import sys
-from string import punctuation
 
 def getLetters(s):
     letters = [c for c in s if c.isalpha()]
