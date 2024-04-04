@@ -41,7 +41,8 @@ class Triathlon:
         self.triathletes[t.tid] = t
 
     def remove(self, tid):
-        del(self.triathletes[tid])
+        if tid in self.triathletes:
+            del(self.triathletes[tid])
 
     def lookup(self, tid):
         return self.triathletes.get(tid)

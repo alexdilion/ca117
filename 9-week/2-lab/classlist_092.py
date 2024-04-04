@@ -1,21 +1,23 @@
 #!/usr/bin/env python3
 
 class Student:
-    def __init__(self, name, studentId, marks = None):
+    def __init__(self, name, studentId, marks):
         self.name = name
         self.id = studentId
-        self.marks = marks or []
+        self.marks = {module: mark for module, mark in marks}
 
     def getAverage(self):
-        markSum = sum([m[1] for m in self.marks])
-        return round(markSum / len(self.marks) + 0.01)
+        return round(sum(self.marks.values()) / len(self.marks) + 0.01)
 
     def __str__(self):
         output = f"Name: {self.name}\nID: {self.id}\n"
-        output += f"Modules: {', '.join(sorted([m[0] for m in self.marks]))}\n"
+        output += f"Modules: {', '.join(sorted(self.marks.keys()))}\n"
         output += f"Average mark: {self.getAverage()}"
 
         return output
+    
+    def __eq__(self, other):
+        return self.getAverage() == other.getAverage()
 
 class Classlist:
     def __init__(self):
