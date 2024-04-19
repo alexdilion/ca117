@@ -30,7 +30,7 @@ class Movie:
             del(self.cast[name])
     
     def __str__(self):
-        cast = ", ".join(self.cast.keys())
+        cast = ", ".join(sorted(self.cast.keys()))
         payroll = sum([a.fee for a in self.cast.values()])
         return (
             f"Title: {self.title}\n"
@@ -39,17 +39,28 @@ class Movie:
             f"Payroll: {payroll}"
         )
 
+from movie_v2_131 import Actor, Movie
+
 def main():
     a1 = Actor('Cillian Murphy', 'Ireland', 5000)
     a2 = Actor('Florence Pugh', 'UK', 6000)
+    a3 = Actor('Matt Damon', 'USA', 9000)
 
     m = Movie(title='Oppenheimer', duration=180)
-
+    
+    print(m)
+    m.add(a3)
+    print(m)
+    m.add(a1)
+    print(m)
+    m.add(a2)
     print(m)
 
-    m.add(a1)
-    m.add(a2)
-
+    m.remove('Florence Pugh')
+    print(m)
+    m.remove('Matt Damon')
+    print(m)
+    m.remove('Cillian Murphy')
     print(m)
 
 if __name__ == '__main__':
