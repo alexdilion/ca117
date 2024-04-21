@@ -5,7 +5,7 @@ import sys
 steps = int(sys.stdin.readline().strip())
 jump_sizes = [int(k) for k in sys.stdin.readline().split()]
 
-def count_ways(curr_value):
+def count_ways(curr_value = 0):
     if curr_value > steps:
         return 0
     elif curr_value == steps:
@@ -16,11 +16,11 @@ def count_ways(curr_value):
     else:
         return count_ways(curr_value + jump_sizes[0]) + count_ways(curr_value + jump_sizes[1])
 
-print(count_ways(0))
+print(count_ways())
 
 # Old method
-# Failed a couple of test -> didn't account for there being only one jump (so got index errors there)
-# Also used BFS which is pretty inefficient since we only care about the nodes at the end of the tree
+# Forgot to account for a single jump being supplied (so got index errors there)
+# This also used BFS which was really inefficient and caused a timeout on one of the larger tests
 
 # options = 0
 # s = [0]
